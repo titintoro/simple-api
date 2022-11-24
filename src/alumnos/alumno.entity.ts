@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty } from "@nestjsx/crud/lib/crud";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
-export class User {
+export class Alumno {
 
     @PrimaryGeneratedColumn()
     id: number; 

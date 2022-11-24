@@ -1,7 +1,8 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
-import { UsersModule } from './users/users.module';
+import { AlumnosModule } from './alumnos/alumnos.module';
 
 @Module({
   imports: [
@@ -11,7 +12,7 @@ import { UsersModule } from './users/users.module';
       entities: ['dist/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
-    UsersModule,
+    AlumnosModule
   ],
 })
 export class AppModule {
